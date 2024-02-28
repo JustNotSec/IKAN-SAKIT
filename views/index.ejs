@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Panel DarkBot</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>  
+</head>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  background-repeat: no-repeat;
+}
+
+.signupSection {
+  background: url(https://wallpaperaccess.com/download/futuristic-hexagon-2797130);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(255, 0, 0, 0.8);
+}
+
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, 0.8);
+}
+.info h2 {
+  padding-top: 30px;
+  font-weight: 300;
+}
+.info p {
+  font-size: 18px;
+}
+.info .icon {
+  font-size: 8em;
+  padding: 20px 0;
+  color: #0ab4b4;
+  background: url(https://d.top4top.io/p_2443eez6w0.png);
+}
+
+.signupForm {
+  width: 20%;
+  padding: 30px 0;
+  background: rgba(20, 40, 40, 0.8);
+  transition: .2s;
+}
+.signupForm h2 {
+  font-weight: 500;
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  possition: relative top: 50px;
+  top: 50px
+  border: 1px solid #0ab4b4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, 0.2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1px solid #0ab4b4;
+  background: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+#join-btn:hover {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 10px 80px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  background-repeat: no-repeat;
+}
+
+.signupSection {
+  background: url(https://wallpaperaccess.com/download/futuristic-hexagon-2797130);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(255, 0, 0, 0.8);
+}
+
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, .8);
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, .8);
+  h2 {
+    padding-top: 90px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    background: url(https://d.top4top.io/p_2443eez6w0.png);
+    <!--color: rgba(10, 180, 180, 1); -->
+  }
+}
+
+.signupForm {
+  width: 90%;
+  padding: 30px 0;
+  background: rgba(20, 40, 40, .8);
+  transition: .2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  possition: relative;
+  top: 700px
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  }
+}
+</style>
+<script language="php">
+	<?php
+  if(isset($_GET["key"]) && isset($_GET["host"]) && isset($_GET["port"]) && isset($_GET["time"]) && isset($_GET["method"]) ) {
+    echo "Apikey " . $_GET["key"];
+    echo "Target " . $_GET["host"];
+    echo "Port " . $_GET["port"];
+    echo "Time".$_GET["time"];
+    echo "Method".$_GET["method"];
+  }
+ ?>
+	</script>
+<body>
+  <div class="signupSection">
+  <div class="info">
+    <h2>DarkBot Panel</h2>
+    <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+    <p>Have A Trouble, Or Buy Access? Contact DarkSec!<br> <u><p href="https://wa.me/6281933692244/">Click Here</p></u></p>
+  </div>
+  <form action="api" method="GET" class="signupForm" name="signupform">
+    <h2>Panel Attacking</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="ApiKey"></label>
+        <input type="text" class="inputFields" id="key" name="key" placeholder="Your ApiKey"/>
+      </li>
+      <li>
+        <label for="Target"></label>
+        <input class="inputFields" id="host" name="host" placeholder="Target"/>
+      </li>
+      <li>
+        <label for="port"></label>
+        <input type="number" class="inputFields" id="port" name="port" placeholder="Port" value="80"/>
+      </li>
+      <li>
+        <label for="time"></label>
+        <input type="number" class="inputFields" id="time" name="time" placeholder="Time"/>
+      </li>
+      <li>
+        <label for="method"></label>
+        <input class="inputFields" id="method" name="method" placeholder="Method Attack"/>
+      </li>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" alt="Join" value="Attack!!!">
+      </li>
+    </ul>
+  </form>
+</div>
+</body>
+</html>

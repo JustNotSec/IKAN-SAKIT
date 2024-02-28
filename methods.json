@@ -1,0 +1,11 @@
+[
+        "DS-STD",
+        "STOP",
+        "DS-KILL",
+        "DS-OVH",
+        "DS-STORM",
+        "DS-HTTP",
+        "DS-BYPASS",
+        "DS-HTTPSV2",
+	"DS-TLS"
+]

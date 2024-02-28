@@ -1,0 +1,8 @@
+{
+    "dark-666-p": {
+        "time": 600,
+        "maxCons": 20,
+        "curCons": 0,
+        "ban": false
+    }
+}
